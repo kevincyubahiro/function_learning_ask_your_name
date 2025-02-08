@@ -5,3 +5,12 @@ const db=mysql.createConnection({
     password:"",
     database:"l5sod"
 })
+
+db.connect((err)=>{
+    if(err){
+        console.log('fail');
+    }
+    else{
+        console.log('yes');
+    }
+})
