@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-        const name = prompt('enter name')
-        import readline from 'readline';
+import readline from 'readline';
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -19,12 +9,12 @@ function ask1() {
     rl.question("Do you have a problem? Type T if yes or F if not: ", (data) => {
         if (data.toLowerCase() === "f") {
             console.log('Interface closed');
-            rl.close(); // Close the interface
+            rl.close(); 
         } else if (data.toLowerCase() === "t") {
-            ask2(); // Call the next question if "T"
+            ask2(); 
         } else {
             console.log("Invalid input, please enter T or F.");
-            ask1(); // Re-ask the question if the input is invalid
+            ask1(); 
         }
     });
 }
@@ -33,20 +23,14 @@ function ask2() {
     rl.question("Try again. Make research after. Type T if you're ready or F if not: ", (data) => {
         if (data.toLowerCase() === "t") {
             console.log("Closing...");
-            rl.close(); // Close the interface when user types "T"
+            rl.close();
         } else if (data.toLowerCase() === "f") {
             console.log("You chose not to continue.");
-            rl.close(); // Close the interface if the user doesn't want to continue
+            rl.close(); 
         } else {
             console.log("Invalid input, please enter T or F.");
-            ask2(); // Re-ask the second question if the input is invalid
-        }
-    });
+            ask2();
 }
 
-// Start asking the first question
-ask1();
 
-    </script>
-</body>
-</html>
+ask1();
