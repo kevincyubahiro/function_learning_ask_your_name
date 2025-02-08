@@ -1,17 +1,17 @@
 import mysql from 'mysql2';
 const db=mysql.createConnection({
     host:"localhost",
-    user:'root',
+    user:"root",
     password:"",
-    database:"l5sod"
+    database:"l5sod",
 })
 
 db.connect((err)=>{
     if(err){
-        console.log('fail');
+        console.log('fail not connect');
     }
     else{
-        console.log('yes');
+        console.log('yes connection successfuly');
     }
 })
-export default db;
+export default mysql;
