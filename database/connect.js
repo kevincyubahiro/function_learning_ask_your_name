@@ -14,3 +14,4 @@ db.connect((err)=>{
         console.log('yes');
     }
 })
+export default db;
