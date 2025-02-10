@@ -4,19 +4,27 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "��#\u0000 \u0000f\u0000u\u0000n\u0000c\u0000t\u0000i\u0000o\u0000n\u0000_\u0000l\u0000e\u0000a\u0000r\u0000n\u0000i\u0000n\u0000g\u0000_\u0000a\u0000s\u0000k\u0000_\u0000y\u0000o\u0000u\u0000r\u0000_\u0000n\u0000a\u0000m\u0000e\u0000\r\u0000 \u0000",
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "mysql2": "^3.12.0",
     "nodemon": "^3.1.9"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevincyubahiro/function_learning_ask_your_name.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kevincyubahiro/function_learning_ask_your_name/issues"
+  },
+  "homepage": "https://github.com/kevincyubahiro/function_learning_ask_your_name#readme"
 }
